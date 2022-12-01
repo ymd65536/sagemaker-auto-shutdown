@@ -62,7 +62,7 @@ cd sagemaker-auto-shutdown
 cp ./on-jupyter-server-start.sh ../
 cp ./check_idle_timeout_configuration.py ../
 cd ..
-chmod 557 ./on-jupyter-server-start.sh
+chmod 755 ./on-jupyter-server-start.sh
 ./on-jupyter-server-start.sh
 ```
 
