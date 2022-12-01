@@ -61,7 +61,7 @@ if [ “$AWS_SAGEMAKER_JUPYTERSERVER_IMAGE” = “jupyter-server-3” ] ; then
 fi;
 pip install --no-dependencies --no-build-isolation -e .
 jupyter serverextension enable --py sagemaker_studio_autoshutdown
-if [ “$AWS_SAGEMAKER_JUPYTERSERVER_IMAGE” = “jupyter-server-3" ] ; then
+if [ "$AWS_SAGEMAKER_JUPYTERSERVER_IMAGE" = "jupyter-server-3" ] ; then
     conda deactivate
 fi;
 
